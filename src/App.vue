@@ -8,13 +8,13 @@ let sucessFlag = ref(false)
 <template>
   <!-- grid container -->
   <div class="grid lg:grid-cols-2 h-screen  ">
-    <div class="flex xl:inline md:justify-center ">
+    <div class="lg:inline md:flex  md:justify-center ">
       <!-- backgrounds -->
       <img src="/image/bg-main-desktop.png" alt="desktop backgrorund"
         class="lg:inline sm:hidden lg:row-span-2 w-3/5 h-screen ">
       <img src="/image/bg-main-mobile.png" alt="mobile background" class="lg:hidden sm:inline sm:w-full sm:h-[270px]">
       <!-- front card -->
-      <div class="absolute xl:top-[17%] lg:top-[15%] xl:left-[12%] lg:left-[7%] md:top-[21%] md:left-[30%]  text-slate-50 font-spaceMedium z-20 ">
+      <div class="absolute xl:top-[17%] lg:top-[15%] xl:left-[12%] lg:left-[7%] md:top-[21%] md:left-[20%]  text-slate-50 font-spaceMedium z-20 ">
         <img src="image/bg-card-front.png" alt="card front" class="xl:w-[430px] lg:w-[370px] md:w-[300px]">
         <img src="image/card-logo.svg" alt="card logo" class="absolute xl:top-[10%] md:top-5 md:left-5 xl:left-[10%] lg:top-[10%] lg:left-[10%] md:w-[60px]">
         <p class="inline  absolute xl:bottom-[30%] md:bottom-[25%] md:text-lg md:left-10 xl:text-3xl  xl:left-[9%] tracking-widest lg:bottom-[29%] lg:left-[11%] lg:text-2xl">9591 6489 6389 101E</p>
@@ -28,7 +28,7 @@ let sucessFlag = ref(false)
       <div class="absolute lg:bottom-[15%]   xl:left-[17%] lg:left-[14%] xl:w-[430px] lg:w-[370px] md:w-[300px] md:bottom-[69%]">
         <img src="/image/bg-card-back.png" class="" alt="">
         <p
-          class="absolute xl:top-[100px] font-spaceMedium tracking-wider xl:right-12 text-xl text-slate-50 lg:top-[85px] md:right-10 md:top-[42%] md:text-base ">
+          class="absolute xl:top-[100px] font-spaceMedium tracking-wider xl:right-12 lg:text-xl text-slate-50 lg:top-[85px] md:right-10 md:top-[42%] md:text-base ">
           000</p>
       </div>
     </div>
@@ -41,7 +41,7 @@ let sucessFlag = ref(false)
         <p class="tracking-wide text-darkGray mt-4 font-spaceMedium">We've added your card details</p>
         <button class="bg-darkViolet text-slate-50 font-spaceBold mt-5 w-full rounded-md p-4">Continue</button>
       </div>
-      <div class="flex justify-center lg:w-[350px]">
+      <div class="flex justify-center lg:w-[350px] md:w-[350px]">
         <form action="#" class="xl:w-[400px] lg:w-full" v-if="formFlag">
           <p class="lable">CARDHOLDER NAME</p>
           <input type="text" placeholder="e.g. Jane Applessed" class="bigInput !mb-5">
@@ -55,13 +55,13 @@ let sucessFlag = ref(false)
               <input type="text" class="smallInputs ml-2" placeholder="YY">
             </div>
             <!-- cvc -->
-            <div class="w-1/2">
+            <div class="w-1/2 ">
               <p class="lable">CVC</p>
               <input type="text" class="smallInputs !w-full" placeholder="e.g. 123">
             </div>
           </div>
           <button
-            class="w-full bg-darkViolet text-slate-50 mt-8 text-[17px] xl:p-4 lg:p-3 rounded-lg font-spaceMedium ">Confirm</button>
+            class="w-full bg-darkViolet text-slate-50 mt-8 text-[17px] xl:p-4 md:p-3 lg:p-3 rounded-lg font-spaceMedium ">Confirm</button>
         </form>
       </div>
 
