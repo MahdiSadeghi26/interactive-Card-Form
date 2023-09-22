@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bigInput {
+  @apply border-2 border-lightGray  focus:outline-none  placeholder:tracking-widest xl:w-full placeholder:text-lg placeholder:text-lightGray  focus:border-darkPurple  rounded-md py-[10px] px-3 mt-1
+  placeholder:font-spaceMedium
+  focus:text-darkPurple
+  lg:w-full
+  ;
+}
+.lable {
+  @apply tracking-widest text-sm text-darkPurple font-spaceBold mb-2;
+}
+
+.smallInputs{
+    @apply border-2 xl:w-[40%] p-2 border-lightGray focus:outline-none focus:border-darkPurple rounded-md  focus:text-darkPurple font-spaceMedium
+    lg:w-[40%]
+}
