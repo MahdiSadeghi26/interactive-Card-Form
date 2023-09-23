@@ -1,10 +1,9 @@
 <script setup>
-import { ref } from 'vue'
-let formFlag = ref(true);
+
 </script>
 <template>
     <div class="flex justify-center lg:w-[350px] md:w-[350px] w-auto">
-        <form action="#" class="xl:w-[400px] lg:w-full" v-if="formFlag">
+        <form action="#" class="xl:w-[400px] lg:w-full" >
             <p class="lable">CARDHOLDER NAME</p>
             <input type="text" placeholder="e.g. Jane Applessed" class="bigInput !mb-5">
             <p class="lable">CARD NUMBER</p>
