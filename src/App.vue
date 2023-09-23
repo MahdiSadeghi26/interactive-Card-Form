@@ -1,8 +1,10 @@
 <script setup>
-import { ref } from 'vue'
 
-let formFlag = ref(true);
-let sucessFlag = ref(false)
+import Thanks from '@/components/Thanks.vue'
+import Inputes from '@/components/Inputes.vue'
+
+
+
 </script>
 
 <template>
@@ -22,8 +24,8 @@ let sucessFlag = ref(false)
         <img src="image/card-logo.svg" alt="card logo"
           class="absolute xl:top-[10%] top-5 md:w-[80px]  left-5 xl:left-[10%] lg:top-[10%] lg:left-[10%] sm:w-[60px] w-[50px]">
         <p
-          class="inline  absolute xl:bottom-[30%] md:bottom-[25%] md:text-lg md:left-10 left-8  xl:text-3xl bottom-[25%]  xl:left-[9%] tracking-widest lg:bottom-[29%] lg:left-[11%] lg:text-2xl">
-          9591 6489 6389 101E</p>
+          class="inline  absolute xl:bottom-[30%] md:bottom-[25%] md:text-lg md:left-10 left-8  xl:text-[26px] bottom-[25%]   tracking-widest lg:bottom-[29%] lg:left-[11%] lg:text-2xl">
+          0000 0000 0000 0000</p>
         <!-- card holder name -->
         <p class="absolute lg:bottom-[10%] xl:left-[10%] md:left-[12%] left-[10%] bottom-[10%] sm:text-sm text-xs">FELICA
           LEIRE</p>
@@ -42,36 +44,8 @@ let sucessFlag = ref(false)
     </div>
     <!-- inputs -->
     <div class="flex  sm:items-center  w-full  justify-center md:w-11/12 -mt-32 md:m-auto  p-2 ">
-      <!-- success section (displays if everything is valid) -->
-      <div class="flex flex-col items-center  xl:w-[400px]" v-if="sucessFlag">
-        <img src="/image/icon-complete.svg" alt="completed">
-        <p class="mt-8 text-3xl font-spaceSemiBold tracking-widest">THANK YOU!</p>
-        <p class="tracking-wide text-darkGray mt-4 font-spaceMedium">We've added your card details</p>
-        <button class="bg-darkViolet text-slate-50 font-spaceBold mt-5 w-full rounded-md p-4">Continue</button>
-      </div>
-      <div class="flex justify-center lg:w-[350px] md:w-[350px] w-auto">
-        <form action="#" class="xl:w-[400px] lg:w-full" v-if="formFlag">
-          <p class="lable">CARDHOLDER NAME</p>
-          <input type="text" placeholder="e.g. Jane Applessed" class="bigInput !mb-5">
-          <p class="lable">CARD NUMBER</p>
-          <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="bigInput">
-          <div class="w-full mt-8 flex">
-            <!-- exp date -->
-            <div class="w-1/2">
-              <p class="lable">EXP. DATE (MM/YY)</p>
-              <input type="text" class="smallInputs" placeholder="MM">
-              <input type="text" class="smallInputs ml-2" placeholder="YY">
-            </div>
-            <!-- cvc -->
-            <div class="w-1/2 ">
-              <p class="lable">CVC</p>
-              <input type="text" class="smallInputs !w-full" placeholder="e.g. 123">
-            </div>
-          </div>
-          <button
-            class="w-full bg-darkViolet text-slate-50 mt-8 text-[17px] xl:p-4 md:p-3 lg:p-3 rounded-lg font-spaceMedium  p-2">Confirm</button>
-        </form>
-      </div>
+      <Thanks></Thanks>
+      <Inputes></Inputes>
 
     </div>
   </div>
