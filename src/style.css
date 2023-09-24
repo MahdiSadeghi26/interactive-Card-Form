@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 .bigInput {
-  @apply border-2 border-lightGray  focus:outline-none  placeholder:tracking-widest xl:w-full placeholder:text-lg placeholder:text-lightGray  focus:border-darkPurple  rounded-md py-[10px] px-3 mt-1
+  @apply focus:outline-none border-[1px] border-darkGray    placeholder:tracking-widest  placeholder:text-lg placeholder:text-lightGray  focus:border-purpleBorder  rounded-md py-[10px] px-3 mt-1
   placeholder:font-spaceMedium
   focus:text-darkPurple
   w-full
-  
+  hover:border-purpleBorder
+  transition-all
+  duration-200
   ;
 }
 .lable {
@@ -15,6 +17,8 @@
 }
 
 .smallInputs{
-    @apply border-2 p-2 border-lightGray focus:outline-none focus:border-darkPurple rounded-md  focus:text-darkPurple font-spaceMedium
+    @apply border-2 p-2 border-lightGray focus:outline-none focus:border-purpleBorder rounded-md  focus:text-darkPurple font-spaceMedium hover:border-purpleBorder
+    transition-all
+    duration-200
     w-[40%]
 }
