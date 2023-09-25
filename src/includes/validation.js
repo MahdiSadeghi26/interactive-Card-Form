@@ -20,7 +20,7 @@ export default {
           min:`The ${ctx.field}is too Short.`,
           alpha_spaces:`This field Onlay Takes Alphabetic and Spaces`,
           numeric:`This ${ctx.field} Takes only numeric values. `,
-          min_value:`for month at least shuold 01 and year 23  `,
+          min_value:`Month minumum 01 year minimum 23`,
           max_value:`for month maximum 12 and year 30 `
 
         }
