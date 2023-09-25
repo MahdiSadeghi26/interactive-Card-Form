@@ -5,7 +5,8 @@ export const useCardStore=defineStore('Card',{
         cardNumber:'',
         cardHolder:'',
         expMonth:'',
-        expYear:''
+        expYear:'',
+        cvc:''
     }),
     
 })
