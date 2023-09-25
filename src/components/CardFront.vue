@@ -19,7 +19,7 @@ let cardState = useCardStore();
     <p class="absolute lg:bottom-[10%] xl:left-[10%] md:left-[12%] left-[10%] bottom-[10%] sm:text-sm text-xs">{{
       !cardState.cardHolder ? 'FELICA LEIRE' : cardState.cardHolder }}</p>
     <span class="absolute md:right-[10%] md:bottom-[10%] text-sm bottom-[10%] right-8">
-      <p class="inline">09</p> / <p class="inline">00</p>
+      <p class="inline">{{ !cardState.expMonth ? '09' : cardState.expMonth }}</p> / <p class="inline">{{ !cardState.expYear ? '00' : cardState.expYear }}</p>
     </span>
   </div>
 </template>
