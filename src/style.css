@@ -3,22 +3,34 @@
 @tailwind utilities;
 
 .bigInput {
-  @apply focus:outline-none border-[1px] border-darkGray    placeholder:tracking-widest  placeholder:text-lg placeholder:text-lightGray  focus:border-purpleBorder  rounded-md py-[10px] px-3 mt-1
+  @apply focus:outline-none border-[1px] border-darkGray    
+  placeholder:tracking-widest  placeholder:text-lg placeholder:text-lightGray  focus:border-purpleBorder  rounded-md py-[10px] px-3 mt-1
   placeholder:font-spaceMedium
   focus:text-darkPurple
   w-full
   hover:border-purpleBorder
   transition-all
-  duration-200
-  ;
+  duration-200;
 }
 .lable {
   @apply tracking-widest text-sm text-darkPurple font-spaceBold mb-2;
 }
 
-.smallInputs{
-    @apply border-2 p-2 border-lightGray focus:outline-none focus:border-purpleBorder rounded-md  focus:text-darkPurple font-spaceMedium hover:border-purpleBorder
+.smallInputs {
+  @apply border-2 p-2 border-lightGray focus:outline-none focus:border-purpleBorder rounded-md 
+   focus:text-darkPurple font-spaceMedium hover:border-purpleBorder
     transition-all
     duration-200
-    w-[40%]
+    w-[40%];
+}
+.errorMassage {
+  @apply text-errorRed font-spaceMedium mb-2 mt-2;
+}
+.error{
+  @apply border-errorRed
+}
+.errorBorder{
+  @apply border-errorRed
+  transition-all
+  duration-300
 }
