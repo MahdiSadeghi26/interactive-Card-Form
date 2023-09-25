@@ -7,7 +7,7 @@ import CardBack from '@/components/CardBack.vue'
 import { useFormStore } from '@/stores/Form'
 
 // Inputes section flag (input fild and )
-const formStore = useFormStore().isSubmited
+const formStore = useFormStore()
 // card state
 
 
@@ -31,8 +31,10 @@ const formStore = useFormStore().isSubmited
     </div>
     <!-- inputs -->
     <div class="flex  sm:items-center  w-full  justify-center md:w-11/12 -mt-32 md:m-auto  p-2 ">
+      <transition  enter-active-class="animate__animated animate__fadeIn animate__delay-1s" leave-active-class="animate__animated animate__fadeOut" class="submit" >
       <Thanks v-if="formStore.isSubmited"></Thanks>
-      <Inputes v-if="!formStore.isSubmited"></Inputes>
+    </transition>
+      <Inputes ></Inputes>
 
     </div>
   </div>
