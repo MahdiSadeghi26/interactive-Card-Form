@@ -8,9 +8,9 @@ let cardState = useCardStore();
 <template>
   <div
     class="absolute xl:top-[17%] lg:top-[15%] xl:left-[12%] lg:left-[7%]  sm:top-[21%] top-[14.5%] md:left-[20%] sm:left-[25%]  left-10  text-slate-50 font-spaceMedium z-20 ">
-    <img src="image/bg-card-front.png" alt="card front"
+    <img src="/image/bg-card-front.png" alt="card front"
       class="xl:w-[430px] lg:w-[370px] md:w-[300px] sm:w-[270px] w-[250px]">
-    <img src="image/card-logo.svg" alt="card logo"
+    <img src="/image/card-logo.svg" alt="card logo"
       class="absolute xl:top-[10%] top-5 md:w-[80px]  left-5 xl:left-[10%] lg:top-[10%] lg:left-[10%] sm:w-[60px] w-[50px]">
     <p
       class="inline  absolute xl:bottom-[30%] md:bottom-[25%] md:text-lg md:left-10 left-8  xl:text-[26px] bottom-[25%]    tracking-widest lg:bottom-[29%] lg:left-[11%] lg:text-2xl">
