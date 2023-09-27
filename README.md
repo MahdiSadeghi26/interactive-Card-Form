@@ -1,16 +1,15 @@
 # Interactive-Card-Form
+Hello this is chalentge i took from font end mentor is was very tough for me but i did it i hope you enjory this project
 
-This template should help get you started developing with Vue 3 in Vite.
+## Preview Image
+Desktop
+![Design preview for the interactive card form](./design/desktop-preview.jpg)
 
-## Recommended IDE Setup
+Mobile 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+![Design preview for the interactive card form](./design/mobile-design.jpg)
+## online visit
+https://vercel.com/mahdisadeghi26/interactive-card-form
 
 ```sh
 npm install
@@ -19,11 +18,11 @@ npm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+vite
 ```
 
 ### Compile and Minify for Production
 
 ```sh
-npm run build
+build
 ```
